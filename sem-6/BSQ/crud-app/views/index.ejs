@@ -1,0 +1,36 @@
+<h1>Employee Management System</h1>
+<form action="/search" method="get">
+    <input type="text" name="name" placeholder="Search by name">
+    <button type="submit">Search</button>
+</form>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Position</th>
+        <th>Salary</th>
+        <th>Actions</th>
+    </tr>
+    <% employees.forEach(employee=> { %>
+        <tr>
+            <td>
+                <%= employee.name %>
+            </td>
+            <td>
+                <%= employee.email %>
+            </td>
+            <td>
+                <%= employee.position %>
+            </td>
+            <td>
+                <%= employee.salary %>
+            </td>
+            <td>
+                <a href="/update/<%= employee._id %>">Edit</a>
+                <a href="/delete/<%= employee._id %>" onclick="return confirm('Are you sure?')">Delete</a>
+            </td>
+        </tr>
+        <% }); %>
+</table>
+<a href="/add">Add Employee</a>
