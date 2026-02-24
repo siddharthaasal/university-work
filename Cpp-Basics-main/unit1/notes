@@ -1,0 +1,3 @@
+ Used for output, and uses the insertion operator (<<)
+ Used for input, and uses the extraction operator (>>)
+

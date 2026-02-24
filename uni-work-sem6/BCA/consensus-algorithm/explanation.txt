@@ -1,0 +1,11 @@
+Explanation
+
+    Block Class: Represents a block in the blockchain, containing properties such as index, previousHash, timestamp, data, and hash.
+
+    Node Class: Represents a node in the network, which maintains its own blockchain and handles block creation and voting.
+        createBlock(): Creates a new block based on the previous block.
+        calculateHash(): Computes the hash of a block.
+        proposeBlock(data): Proposes a new block and initiates the voting process.
+        voteOnBlock(block): Simulates the voting process where each node votes on the proposed block. If the block receives enough "yes" votes, it gets added to the blockchain.
+
+    Usage: Creates multiple nodes, and one of the nodes proposes a block. The voting mechanism is simulated, and the result is displayed.

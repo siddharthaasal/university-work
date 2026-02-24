@@ -1,0 +1,52 @@
+Visibilty modifiers: 
+Private can't be inherited.
+
+Single Inheritance:  base,super,parent -> derived,sub,child.    1 base class & 1 derived class  A -> B
+Multilevel:  A -> B -> C
+Multiple: More than 1 base class. 1 derived class. 
+Hierarchial: More than 1 derived class. 1 base class.
+Hybrid: More than 1 type of inheritances are taken into consideration. 
+
+Polymorphism: Constructor, Function, Operator overloading
+Operator overloading: User can redefine the meaning of an Operator so as to use the Operator on objects/user defined datatypes
+Can't overload :: . ?: sizeof 
+returnType operator symbol(argument list)  //definition inside class
+or  returnType className :: operator symbol(argument list)  //definition outside class
+
+
+compile time/static binding/ early binding : constructor overloading & operator overloading, function overloading
+runtime/dynamic binding/ late binding: virtual fn, function over-riding
+
+
+Rules for virtual functions:
+They cannot be static
+They are accessed by object pointers
+Virtual functions can be a friend of another class
+A virtual function in the base class might not be used.
+If a virtual function is defined in a base class, there is no necessity of redefining it in the derived class
+
+Pure Virtual Function:
+virtual returnType fnName (argument list) = 0; 
+object is not created.
+
+Throw v/s catch:
+the exceptional handler can be identified by keyword
+Throw statement is also similar, but the diff is instead of calling the function, it calls the catch block
+catch always take one parameter
+
+Application:
+Helps in finding and handling abnormal conditions that a program encounters during its execution.
+
+
+Exception handling in C++ consists of three keywords: try, throw and catch:
+The try statement allows you to define a block of code to be tested for errors while it is being executed.
+The throw keyword throws an exception when a problem is detected, which lets us create a custom error.
+The catch statement allows you to define a block of code to be executed if an error occurs in the try block.
+The try and catch keywords come in pairs:
+We use the try block to test some code: 
+If the value of a variable “age” is less than 18, we will throw an exception, and handle it in our catch block.
+In the catch block, we catch the error if it occurs and do something about it. 
+The catch statement takes a single parameter. So, if the value of age is 15 and that’s why 
+we are throwing an exception of type int in the try block (age), we can pass “int myNum” as the parameter to the catch statement, 
+where the variable “myNum” is used to output the value of age.
+If no error occurs (e.g. if age is 20 instead of 15, meaning it will be greater than 18), the catch block is skipped.

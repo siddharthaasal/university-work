@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Hyperledger Fabric
+**/vars/
+**/organizations/peerOrganizations/
+**/organizations/ordererOrganizations/
+**/channel-artifacts/
+**/crypto-config/
+*.log
+*.tar.gz
+
+# Environments
+.env
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store

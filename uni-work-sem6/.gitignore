@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Hardhat / Blockchain
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# Geth / Blockchain Data
+# Ignoring chaindata, lightchaindata and locks found in BCA/GethNetwork
+**/geth/chaindata/
+**/geth/lightchaindata/
+**/geth/nodes/
+**/geth/LOCK
+**/geth/nodekey
+**/geth/transactions.rlp
+**/ancient/
+**/FLOCK
+
+# Environments
+.env
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store

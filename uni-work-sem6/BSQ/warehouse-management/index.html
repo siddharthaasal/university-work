@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        input,
+        button {
+            margin: 5px;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .low-stock {
+            background-color: #ffcccc;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Warehouse Inventory Management</h2>
+    <input type="text" id="itemName" placeholder="Item Name">
+    <input type="number" id="itemQuantity" placeholder="Quantity" min="1">
+    <input type="number" id="itemLimit" placeholder="Limit" min="1">
+    <button onclick="addItem()">Add Item</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Limit</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="inventoryTable"></tbody>
+    </table>
+    <script src="./index.js"></script>
+</body>
+
+</html>

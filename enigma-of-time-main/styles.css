@@ -1,0 +1,137 @@
+/* Night-owl theme styling */
+body {
+    font-family: monospace;
+    margin-left: 150px;
+    margin-right: 150px;
+    line-height: 1.6;
+    background-color: #1e1e2e;
+    text-align: justify;
+    /* Deep dark background */
+    color: #c5c8c6;
+    font-size: 14px;
+    /* Soft gray text */
+}
+
+h1 {
+    color: #8abeb7;
+    /* Soft teal */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 48px;
+}
+
+h2 {
+    color: #ab3376;
+    /* Soft teal */
+    /* text-align: center; */
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); */
+    font-size: 24px;
+}
+
+p {
+    color: #d8dee9;
+    font-size: 16px;
+    /* Slightly lighter gray for contrast */
+}
+
+q {
+
+    display: block;
+    font-size: 1.2em;
+    font-style: italic;
+    margin-left: 200px;
+    margin-right: 200px;
+    /* padding: 15px; */
+    text-align: center;
+    /* background-color: #3b4252; */
+    /* Subtle contrast background */
+    /* border-left: 5px solid #81a1c1; */
+    /* Highlight strip */
+    color: white;
+    /* Lighter text */
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); */
+
+}
+
+img {
+    width: 600px;
+    height: 350px;
+    display: block;
+    margin: auto;
+    border: 2px solid #4c566a;
+    margin-top: 25px;
+    opacity: 75%;
+    /* Subtle border */
+}
+
+a {
+    color: #88c0d0;
+    /* Calm cyan */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    background-color: #2e3440;
+    /* Dark table background */
+}
+
+table,
+th,
+td {
+    border: 1px solid #4c566a;
+    /* Border matching the theme */
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    color: #d8dee9;
+}
+
+th {
+    background-color: #3b4252;
+    /* Slightly darker for header */
+    font-weight: bold;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #88c0d0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #4c566a;
+    border-radius: 4px;
+    background-color: #3b4252;
+    color: #d8dee9;
+}
+
+form button {
+    background-color: #88c0d0;
+    color: #2e3440;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #81a1c1;
+}
